@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon Index Route</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <ul class='pokemon'>
+        <%for (let i = 0; i < pokemon.length; i++){%>
+          <li><%=pokemon[i].name%></li>
+        <%}%>
+      </ul>
+    </div>
+  </body>
+</html>
