@@ -10,6 +10,9 @@
     <div class="container">
       <div class="pokemon">
         <h1><%=pokemon.name%></h1>
+        <form class="change-pokemon" action="/pokemon/<%=index%>/edit" method="get">
+          <input size=40 type="submit" name="" value="Change <%=pokemon.name%>">
+        </form>
         <img src=<%=pokemon.img%> alt="picture of <%=pokemon.name%>">
       </div>
     </div>

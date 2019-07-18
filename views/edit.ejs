@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Edit <%=pokemon.name%></title>
+  </head>
+  <body>
+    <h1>Edit <%=pokemon.name%></h1>
+    <form class="edit-pokemon" action="/pokemon/<%=index%>?_method=put" method="post">
+      Change Your Pokemon <input type="text" name="name" value="<%=pokemon.name%>">
+      <input type="submit" name="" value="Transform!">
+    </form>
+  </body>
+</html>
